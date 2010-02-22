@@ -38,6 +38,7 @@ OTHER DEALINGS IN THE SOFTWARE.
 var tcp = require('tcp');
 var sys = require('sys');
 
+
 var email = {
   send:function (options){
     var options = typeof(options) == "undefined" ? {} : options;
@@ -46,31 +47,30 @@ var email = {
 	options.subject = typeof(options.subject) == "undefined" ? "node_mailer test email" : options.subject;
 	options.body = typeof(options.body) == "undefined" ? "hello this is a test email from the node_mailer" : options.body;	
 		
-	var promise = new process.Promise(); 
 	var self = this;
 
 	this.connection = tcp.createConnection(25);
 	this.connection.addListener("connect", function (socket) {
-	  self.connection.send("helo localhost\r\n");
-	  self.connection.send("mail from: " + options.from + "\r\n");
-	  self.connection.send("rcpt to: " + options.to + "\r\n");
-	  self.connection.send("data\r\n");
-	  self.connection.send("From: " + options.from + "\r\n");
-	  self.connection.send("To: " + options.to + "\r\n");
-	  self.connection.send("Subject: " + options.subject + "\r\n");
-	  self.connection.send("Content-Type: text/html\r\n");
-	  self.connection.send(email.wordwrap(options.body) + "\r\n");
-	  self.connection.send(".\r\n");
-	  self.connection.send("quit\r\n");
+	  self.connection.write("helo localhost\r\n");
+	  self.connection.write("mail from: " + options.from + "\r\n");
+	  self.connection.write("rcpt to: " + options.to + "\r\n");
+	  self.connection.write("data\r\n");
+	  self.connection.write("From: " + options.from + "\r\n");
+	  self.connection.write("To: " + options.to + "\r\n");
+	  self.connection.write("Subject: " + options.subject + "\r\n");
+	  self.connection.write("Content-Type: text/html\r\n");
+	  self.connection.write(email.wordwrap(options.body) + "\r\n");
+	  self.connection.write(".\r\n");
+	  self.connection.write("quit\r\n");
 	  self.connection.close();
 	});
 
-	this.connection.addListener("receive", function (data) {
+	this.connection.addListener("data", function (data) {
 		if(email.parseResponse(data)){
-			promise.emitSuccess("Email sent!");
+
 			sys.puts("SUCC");
 		}else{
-			promise.emitError("EMAIL ERROR");
+
 			sys.puts("ERR");
 		}
 		sys.puts(data);

@@ -62,7 +62,7 @@ var email = {
 	  self.connection.write(email.wordwrap(options.body) + "\r\n");
 	  self.connection.write(".\r\n");
 	  self.connection.write("quit\r\n");
-	  self.connection.close();
+	  self.connection.end();
 	});
 
 	this.connection.addListener("data", function (data) {

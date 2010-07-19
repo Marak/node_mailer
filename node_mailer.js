@@ -45,13 +45,20 @@ var email = {
     options.from = typeof(options.from) == "undefined" ? "obama@whitehouse.gov" : options.from;
     options.subject = typeof(options.subject) == "undefined" ? "node_mailer test email" : options.subject;
     options.body = typeof(options.body) == "undefined" ? "hello this is a test email from the node_mailer" : options.body;  
+    options.host = typeof(options.host) == "undefined" ? "localhost" : options.host;
+    options.domain = typeof(options.domain) == "undefined" ? "localhost" : options.domain;
         
     var self = this;
 
-    this.connection = tcp.createConnection(25);
+    this.connection = tcp.createConnection(25, options.host);
     this.connection.setEncoding('utf8');
     this.connection.addListener("connect", function () {
-      self.connection.write("helo localhost\r\n");
+      self.connection.write("helo " + options.domain + "\r\n");
+      if(options.authentication === "login") {
+        self.connection.write("auth login\r\n");
+        self.connection.write(options.username + "\r\n");
+        self.connection.write(options.password + "\r\n");
+      }
       self.connection.write("mail from: " + options.from + "\r\n");
       self.connection.write("rcpt to: " + options.to + "\r\n");
       self.connection.write("data\r\n");

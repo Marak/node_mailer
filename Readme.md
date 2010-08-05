@@ -1,6 +1,5 @@
-#node_mailer
-<img src = "http://imgur.com/5Ol90.png"/>
-send emails from node.js to your smtp server, simple as cake.
+<img src = "http://imgur.com/5Ol90.png"/><br/>
+###send emails from node.js to your smtp server, simple as cake.
 
 # USAGE
 

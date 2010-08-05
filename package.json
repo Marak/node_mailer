@@ -1,12 +1,12 @@
 {
   "name": "mailer",
-  "description": "send emails from node.js to an smtp server, simple as cake",
-  "version": "0.1.0",
+  "description": "send emails from node.js to a smtp server, simple as cake",
+  "version": "0.2.0",
   "author": "Marak Squires",
   "repository": {
     "type": "git",
     "url": "http://github.com/Marak/node_mailer.git"
   },
   "engine": [ "node >=0.1.90" ],
-  "main": "node_mailer"
+  "main": "lib/node_mailer"
 }

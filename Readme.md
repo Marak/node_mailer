@@ -1,3 +1,5 @@
+#node_mailer
+<img src = "http://imgur.com/5Ol90.png"/>
 send emails from node.js to your smtp server, simple as cake.
 
 # USAGE
@@ -6,6 +8,7 @@ send emails from node.js to your smtp server, simple as cake.
     
     email.send({
       host : "localhost",              // smtp server hostname
+      port : "25",                     // smtp server port
       domain : "localhost",            // domain used by client to identify itself to server
       authentication : "login",        // auth login is supported; anything else is no auth
       username : "dXNlcm5hbWU=",       // Base64 encoded username

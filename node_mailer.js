@@ -47,10 +47,11 @@ var email = {
     options.body = typeof(options.body) == "undefined" ? "hello this is a test email from the node_mailer" : options.body;  
     options.host = typeof(options.host) == "undefined" ? "localhost" : options.host;
     options.domain = typeof(options.domain) == "undefined" ? "localhost" : options.domain;
+    options.port = typeof(options.port) == "undefined" ? 25 : options.port;
         
     var self = this;
 
-    this.connection = tcp.createConnection(25, options.host);
+    this.connection = tcp.createConnection(options.port, options.host);
     this.connection.setEncoding('utf8');
     this.connection.addListener("connect", function () {
       self.connection.write("helo " + options.domain + "\r\n");

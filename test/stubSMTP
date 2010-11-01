@@ -1,8 +1,0 @@
-#!/usr/bin/env bash
-if [ -z $1 ]
-then port=1025
-else port=$1
-fi
-
-echo "Starting dumb mail server on localhost:$port"
-python -m smtpd -n -c DebuggingServer localhost:$port

@@ -10,6 +10,6 @@
     "type": "git",
     "url": "http://github.com/Marak/node_mailer.git"
   },
-  "engine": [ "node >=0.2.00" ],
+  "engine": [ "node >=0.1.90" ],
   "main": "lib/node_mailer"
 }

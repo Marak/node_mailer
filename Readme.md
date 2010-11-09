@@ -26,7 +26,7 @@
   
         email.send({
           host : "localhost",              // smtp server hostname
-          port : "252",                     // smtp server port
+          port : "25",                     // smtp server port
           domain : "localhost",            // domain used by client to identify itself to server
           to : "marak.squires@gmail.com",
           from : "obama@whitehouse.gov",
@@ -63,7 +63,7 @@
   
         email.send({
           host : "localhost",               // smtp server hostname
-          port : "252",                     // smtp server port
+          port : "25",                     // smtp server port
           domain : "localhost",             // domain used by client to identify itself to server
           to : "marak.squires@gmail.com",
           from : "obama@whitehouse.gov",

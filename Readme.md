@@ -53,7 +53,7 @@
 
       It uses mustache templating to do basic search and replaces. 
 
-      The {{color}} {{animal}} {{adjective}} ran over the {{noun}}.
+      The {{color}} {{animal}} {{adverb}} ran over the {{noun}}.
 
 ### then send the mail using some simple JSON based Mustache replacement.
 
@@ -76,7 +76,7 @@
               return arr[Math.floor(Math.random()*3)];
             },
             "animal": "monkey",
-            "adjective": "quickly",
+            "adverb": "quickly",
             "noun": "hot lava"
           },
 

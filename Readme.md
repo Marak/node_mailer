@@ -1,4 +1,4 @@
-#v0.4.3
+#v0.4.4
 <img src = "http://imgur.com/5Ol90.png"/><br/>
 ###send emails from node.js to your smtp server, simple as cake.
 

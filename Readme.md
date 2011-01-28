@@ -93,4 +93,5 @@
 
 ## Authors
 
-Marak Squires, Elijah Insua 
+Marak Squires, Elijah Insua, Fedor Indutny
+

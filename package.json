@@ -12,9 +12,9 @@
     "url": "http://github.com/Marak/node_mailer.git"
   },
   "dependencies": {
-    "carrier": ">= 0.0.4",
+    "nodemailer": ">= 0.1.10",
     "colors": ">= 0.3.0"
   },
-  "engine": [ "node >=0.1.90" ],
+  "engine": [ "node >=0.3.0" ],
   "main": "lib/node_mailer"
 }

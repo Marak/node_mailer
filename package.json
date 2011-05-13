@@ -1,11 +1,12 @@
 {
   "name": "mailer",
   "description": "send emails from node.js to a smtp server, simple as cake",
-  "version": "0.4.52",
+  "version": "0.5.52",
   "author": "Marak Squires",
   "contributors" : [
     "Elijah Insua <tmpvar@gmail.com> (http://tmvpar.com/)",
-    "Fedor Indutny <fedor.indutny@gmail.com> (http://indutny.com/)"
+    "Fedor Indutny <fedor.indutny@gmail.com> (http://indutny.com/)",
+    "Bradley Meck <bradley.meck@gmail.com> (http://bradleymeck.com)"
   ],
   "repository": {
     "type": "git",

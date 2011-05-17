@@ -11,8 +11,8 @@ for(var i = 0; i < 10; i++){
     subject : "node_mailer test email",
     body: "Hello! This is a test of the node_mailer.",
     authentication : "login",        // auth login is supported; anything else is no auth
-    username : undefined,       // Base64 encoded username
-    password : undefined      // Base64 encoded password
+    username : 'username',       // Base64 encoded username
+    password : 'password'      // Base64 encoded password
   },
   function(err, result){
     if(err){ console.log(err); }

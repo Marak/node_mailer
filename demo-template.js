@@ -22,8 +22,8 @@ for(var i = 0; i < 10; i++){
     },
 
     authentication : "login",        // auth login is supported; anything else is no auth
-    username : "dXNlcm5hbWU=",       // Base64 encoded username
-    password : "cGFzc3dvcmQ="        // Base64 encoded password
+    username : undefined,            // username
+    password : undefined             // password
   },
   function(err, result){
     if(err){ console.log(err); }

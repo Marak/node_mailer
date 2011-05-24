@@ -1,0 +1,7 @@
+node_mailer changelog:
+
+0.6.0 [Breaking]
+- Plaintext username/password
+
+0.5.0
+- NodeMailer as backing SmtpClient

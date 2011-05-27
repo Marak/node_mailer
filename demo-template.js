@@ -9,7 +9,7 @@ for(var i = 0; i < 10; i++){
     to : "marak.squires@gmail.com",
     from : "obama@whitehouse.gov",
     subject : "node_mailer test email",
-    template : "../templates/sample.txt",   // path to template name
+    template : "./templates/sample.txt",   // path to template name
     data : {
       "username": "Billy Bob",
       "color": function(){

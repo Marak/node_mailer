@@ -1,6 +1,6 @@
 var email = require("./lib/node_mailer");
 
-for(var i = 0; i < 10; i++){
+for(var i = 0; i < 1; i++){
   email.send({
     ssl: true,
     host : "smtp.gmail.com",              // smtp server hostname
@@ -9,6 +9,7 @@ for(var i = 0; i < 10; i++){
     to : "bradley.meck@gmail.com",
     from : "bradley.meck@gmail.com",
     subject : "node_mailer test email",
+    reply_to:"bradley@bradleymeck.com",
     body: "Hello! This is a test of the node_mailer.",
     authentication : "login",        // auth login is supported; anything else is no auth
     username : undefined,            // username

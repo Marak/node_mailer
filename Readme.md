@@ -1,4 +1,4 @@
-#v0.4.51
+#v0.6.0
 <img src = "https://github.com/Marak/node_mailer/raw/master/logo.png"/><br/>
 ###send emails from node.js to your smtp server, simple as cake.
 
@@ -51,7 +51,7 @@ add an option ssl: true. See usage above.
 
 ### create a simple template
 
-/templates/sample.text
+/templates/sample.txt
 
       Hello {{username}}, 
 
@@ -94,6 +94,8 @@ add an option ssl: true. See usage above.
           if(err){ console.log(err); }
         });
       }
+
+
 
 
 

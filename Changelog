@@ -1,5 +1,12 @@
 node_mailer changelog:
 
+0.6.2
+- Fix for template logic
+- Templates now default to html emails
+
+0.6.1
+- All Nodemailer arguments should now be merged in
+
 0.6.0 [Breaking]
 - Plaintext username/password
 

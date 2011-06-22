@@ -1,4 +1,4 @@
-#v0.6.0
+#v0.6.3
 <img src = "https://github.com/Marak/node_mailer/raw/master/logo.png"/><br/>
 ###send emails from node.js to your smtp server, simple as cake.
 

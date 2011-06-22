@@ -1,5 +1,8 @@
 node_mailer changelog:
 
+0.6.4
+- Don't sent plaintext body for templates, only send html, this should help w/ some confusion of email clients that are getting confused
+
 0.6.3
 - Fix for logging
 

@@ -1,0 +1,7 @@
+<div>Hello {{username}}, </div>
+<br/>
+<div>This is a sample template of the node mailer.</div>
+<br/>
+<div>It uses mustache templating to do basic search and replaces. </div>
+<br/>
+<div>The {{color}} {{animal}} {{adverb}} ran over the {{noun}}.</div>

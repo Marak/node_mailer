@@ -13,7 +13,8 @@ for(var i = 0; i < 1; i++){
     body: "Hello! This is a test of the node_mailer.",
     authentication : "login",        // auth login is supported; anything else is no auth
     username : undefined,            // username
-    password : undefined             // password
+    password : undefined,            // password
+    debug: true                      // log level per message
   },
   function(err, result){
     if(err){ console.log(err); }

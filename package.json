@@ -13,7 +13,7 @@
     "url": "http://github.com/Marak/node_mailer.git"
   },
   "dependencies": {
-    "nodemailer": ">= 0.1.10",
+    "nodemailer": "0.1.20",
     "colors": ">= 0.3.0"
   },
   "engine": [ "node >=0.3.0" ],
